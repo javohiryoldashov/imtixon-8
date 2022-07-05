@@ -1,0 +1,13 @@
+.adminMain{
+  display: flex;
+}
+.sidebar{
+  height: 100vh;
+  width: 200px;
+  background-color: rgb(249, 249, 249);
+}
+
+.logoAdmin{
+  background-color: #f3f6fd;
+  border-radius: 27px;
+}

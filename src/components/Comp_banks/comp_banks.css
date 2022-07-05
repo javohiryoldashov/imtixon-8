@@ -1,0 +1,78 @@
+.CompBanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.form{
+    margin-top: 50px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: rgba(173, 165, 165, 0.669);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 10px;
+}
+.form_input{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+}
+.form_btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+.banks_items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.banks_child{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(73, 156, 229);
+    color: white;
+}
+
+.banks_One{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:288px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: blue;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.banks_One::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+}
+.banks_One::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 5px;
+}

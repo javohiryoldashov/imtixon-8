@@ -1,0 +1,56 @@
+.CompBranch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form{
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.branches_items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.branches_child{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(73, 156, 229);
+    color: white;
+}
+
+.branches_One{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: blue;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.branches_One::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+}
+.branches_One::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 5px;
+}
