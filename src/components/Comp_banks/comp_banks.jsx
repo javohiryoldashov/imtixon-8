@@ -5,7 +5,7 @@ const CompBanks = () => {
     const [banks, setBanks] = useState([])
     
     useEffect(() => {
-        fetch(`http://localhost:9000/banks`)
+        fetch(`https://credojavokhirs.herokuapp.com/banks`)
         .then(res => res.json())
         .then(data => {
             setBanks(data)
@@ -28,7 +28,7 @@ const CompBanks = () => {
                 alert("Berilgan malumotlar toliq emas iltimos qayta to'ldiring !");
               return false;
             }
-            fetch(`http://localhost:9000/banks`,{
+            fetch(`https://credojavokhirs.herokuapp.com/banks`,{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ const CompBanks = () => {
             })
         }
         const hendelDelete = id=>{
-            fetch(`http://localhost:9000/banks/${id}`,{
+            fetch(`https://credojavokhirs.herokuapp.com/banks/${id}`,{
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

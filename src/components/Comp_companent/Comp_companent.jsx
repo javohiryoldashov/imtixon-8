@@ -6,7 +6,7 @@ const CompCompanent = () => {
     const [company, setCompany] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:9000/company`)
+        fetch(`https://credojavokhirs.herokuapp.com/company`)
         .then(res => res.json())
         .then(data => {
             setCompany(data)
@@ -21,7 +21,7 @@ const CompCompanent = () => {
                     return false;
             }
             e.preventDefault()
-            fetch(`http://localhost:9000/company`,{
+            fetch(`https://credojavokhirs.herokuapp.com/company`,{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const CompCompanent = () => {
             })
         }
         const hendelDelete = (id)=>{
-            fetch(`http://localhost:9000/company/${id}`,{
+            fetch(`https://credojavokhirs.herokuapp.com/company/${id}`,{
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

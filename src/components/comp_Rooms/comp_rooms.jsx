@@ -5,7 +5,7 @@ const CompRooms = () => {
     const [rooms, setRooms] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:9000/rooms`)
+        fetch(`https://credojavokhirs.herokuapp.com/rooms`)
         .then(res => res.json())
         .then(data => {
             setRooms(data)
@@ -26,7 +26,7 @@ const CompRooms = () => {
                     return false;
             }
             e.preventDefault()
-            fetch(`http://localhost:9000/rooms`,{
+            fetch(`https://credojavokhirs.herokuapp.com/rooms`,{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ const CompRooms = () => {
             })
         }
         const hendelDelete = id=>{
-            fetch(`http://localhost:9000/rooms/${id}`,{
+            fetch(`https://credojavokhirs.herokuapp.com/rooms/${id}`,{
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

@@ -6,7 +6,7 @@ const CompBranch = () => {
 
    
     useEffect(() => {
-        fetch(`http://localhost:9000/branches`)
+        fetch(`https://credojavokhirs.herokuapp.com/branches`)
         .then(res => res.json())
         .then(data => {
             setBranches(data)
@@ -26,7 +26,7 @@ const CompBranch = () => {
             }
             
             e.preventDefault()
-            fetch(`http://localhost:9000/branches`,{
+            fetch(`https://credojavokhirs.herokuapp.com/branches`,{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ const CompBranch = () => {
             })
         }
         const hendelDelete = id=>{
-            fetch(`http://localhost:9000/branches/${id}`,{
+            fetch(`https://credojavokhirs.herokuapp.com/branches/${id}`,{
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

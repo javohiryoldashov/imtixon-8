@@ -12,7 +12,7 @@ const HomeMain = () => {
     const [room_year, setRoom_year] = useState()
     const [banks, setBanks] = useState()
     useEffect(() => {
-        fetch(`http://localhost:9000/company`)
+        fetch(`https://credojavokhirs.herokuapp.com/company`)
         .then(res => res.json())
         .then(data => {
             setCompany(data)
@@ -21,7 +21,7 @@ const HomeMain = () => {
     const hendelCompany = async () =>{
         var opt = document.getElementById('small1')
         var id = opt.value
-        await fetch(`http://localhost:9000/company/${id}`,{
+        await fetch(`https://credojavokhirs.herokuapp.com/company/${id}`,{
             method: 'GET'
         }).then(res =>res.json())
         .then(data =>{
@@ -29,7 +29,7 @@ const HomeMain = () => {
         })
         var opt = document.getElementById('small1')
         var id = opt.value
-        fetch(`http://localhost:9000/branches/${id}`,{
+        fetch(`https://credojavokhirs.herokuapp.com/branches/${id}`,{
             method: 'GET'
         })
         .then(res =>res.json())
@@ -41,7 +41,7 @@ const HomeMain = () => {
         
         var opt = document.getElementById('small2')
         var id = opt.value
-        await fetch(`http://localhost:9000/branches/one/${id}`,{
+        await fetch(`https://credojavokhirs.herokuapp.com/branches/one/${id}`,{
             method: 'GET'
         })
         .then(res =>res.json())
@@ -50,7 +50,7 @@ const HomeMain = () => {
         })
         var opt = document.getElementById('small2')
         var id = opt.value
-         fetch(`http://localhost:9000/rooms/${id}`,{
+         fetch(`https://credojavokhirs.herokuapp.com/rooms/${id}`,{
             method: 'GET'
         })
         .then(res =>res.json())
@@ -61,7 +61,7 @@ const HomeMain = () => {
     const hendelRoom = async () =>{
         var opt = document.getElementById('small3')
         var id = opt.value
-        await fetch(`http://localhost:9000/rooms/one/${id}`,{
+        await fetch(`https://credojavokhirs.herokuapp.com/rooms/one/${id}`,{
             method: 'GET'
         })
         .then(res =>res.json())
@@ -74,7 +74,7 @@ const HomeMain = () => {
 
     const hendelYear = async ()=>{
         let money = document.getElementById('99999')
-        await fetch(`http://localhost:9000/banks/${money.textContent}`,{
+        await fetch(`https://credojavokhirs.herokuapp.com/banks/${money.textContent}`,{
             method: 'GET'
         })
         .then(res =>res.json())
