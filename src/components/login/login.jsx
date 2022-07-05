@@ -1,7 +1,7 @@
 import React from 'react';
 import './login.css'
 import {LoginTpken} from '../../Provider/loginToken/LoginToken'
-import { useNavigate, NavLink } from 'react-router-dom';
+import { useNavigate, NavLink, Navigate } from 'react-router-dom';
 import { useRef, useContext } from 'react'
 import logo from '../../assets/images/logo1.png'
 const Login = () => {
@@ -17,7 +17,7 @@ const Login = () => {
             
         }
         if(token){
-            navigate('/admin/company')
+           Navigate('/admin/company')
         }
         
     }
