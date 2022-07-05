@@ -11,14 +11,13 @@ const Login = () => {
     let navigate = useNavigate();
     const heldelGet = (e) =>{
         e.preventDefault()
-        console.log(hendRef.current.value);
+        // console.log(hendRef.current.value);
         if(hendRef.current.value == 'admin' && hendRef2.current.value == 'admin007'){
-            localStorage.setItem('token', 'adminToken7')
-            
+            localStorage.setItem('token', 'admin007')           
+            navigate('/admin/company', {replace: true})
+        
         }
-        if(token){
-           Navigate('/admin/company')
-        }
+       
         
     }
     return (
